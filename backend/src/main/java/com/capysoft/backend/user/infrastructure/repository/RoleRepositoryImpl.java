@@ -13,10 +13,10 @@ import java.util.Optional;
 public class RoleRepositoryImpl implements IRoleRepository{
 
     //inyeccion del repositorio JPA
-    private final RoleRepository jpaRepository;
+    private final RoleJpaRepository jpaRepository;
 
     //metodos CRUD basicos implementados usando JPA
-    public RoleRepositoryImpl(RoleRepository jpaRepository) {
+    public RoleRepositoryImpl(RoleJpaRepository jpaRepository) {
         this.jpaRepository = jpaRepository;
     }
 

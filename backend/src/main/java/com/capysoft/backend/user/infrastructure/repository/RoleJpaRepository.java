@@ -7,7 +7,7 @@ import com.capysoft.backend.user.domain.model.Role;
 
 //Definicion del repositorio RoleRepository para la entidad Role
 @Repository
-public interface RoleRepository extends JpaRepository<Role, Integer> {
+public interface RoleJpaRepository extends JpaRepository<Role, Integer> {
     //puede dejarse vacio si no se necesitan consultas personalizadas ya que JPA proporciona metodos CRUD basicos
 
     //Metodo personalizado para encontrar un rol por su nombre
