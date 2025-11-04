@@ -8,9 +8,12 @@ import com.capysoft.backend.status.application.mapper.StatusMapper;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Service;
+
 import com.capysoft.backend.status.application.dto.StatusRequestDTO;
 import com.capysoft.backend.status.application.dto.StatusResponseDTO;
 
+@Service
 public class StatusServiceImpl implements IStatusService {
 
     private final IStatusRepository statusRepository;

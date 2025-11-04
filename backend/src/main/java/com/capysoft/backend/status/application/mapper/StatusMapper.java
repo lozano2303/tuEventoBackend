@@ -1,9 +1,13 @@
 package com.capysoft.backend.status.application.mapper;
 
 import com.capysoft.backend.status.domain.model.Status;
+
+import org.springframework.stereotype.Component;
+
 import com.capysoft.backend.status.application.dto.StatusRequestDTO;
 import com.capysoft.backend.status.application.dto.StatusResponseDTO;
 
+@Component
 public class StatusMapper {
 
     //convertir de entidad a responseDTO
