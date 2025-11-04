@@ -1,4 +1,4 @@
-package com.capysoft.backend.user.application.service;
+package com.capysoft.backend.user.domain.service;
 
 //importaciones necesarias
 import com.capysoft.backend.user.application.dto.RoleRequestDTO;

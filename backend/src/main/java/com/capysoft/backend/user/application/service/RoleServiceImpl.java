@@ -6,6 +6,8 @@ import com.capysoft.backend.user.application.dto.RoleResponseDTO;
 import com.capysoft.backend.user.application.mapper.RoleMapper;
 import com.capysoft.backend.user.domain.model.Role;
 import com.capysoft.backend.user.domain.repository.IRoleRepository;
+import com.capysoft.backend.user.domain.service.IRoleService;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,11 +15,11 @@ import java.util.stream.Collectors;
 
 //servicio de roles (crear, listar, buscar (por nombre))
 @Service
-public class RoleService implements IRoleService{ //se implementa la interfaz IRoleService
+public class RoleServiceImpl implements IRoleService{ //se implementa la interfaz IRoleService
 
     private final IRoleRepository roleRepository;
 
-    public RoleService(IRoleRepository roleRepository) {
+    public RoleServiceImpl(IRoleRepository roleRepository) {
         this.roleRepository = roleRepository;
     }
 

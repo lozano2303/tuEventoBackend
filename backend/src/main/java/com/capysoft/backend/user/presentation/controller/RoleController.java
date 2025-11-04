@@ -2,7 +2,8 @@ package com.capysoft.backend.user.presentation.controller;
 
 import com.capysoft.backend.user.application.dto.RoleRequestDTO;
 import com.capysoft.backend.user.application.dto.RoleResponseDTO;
-import com.capysoft.backend.user.application.service.IRoleService;
+import com.capysoft.backend.user.domain.service.IRoleService;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
