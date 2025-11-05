@@ -18,16 +18,16 @@ public class Department {
     @Column(name = "department_id")
     private int departmentId;
 
-    @Column(name = "name", nullable = false, length = 50)
-    private String name;
+    @Column(name = "department_name", nullable = false, length = 50)
+    private String departmentName;
 
     // Constructor vacio para JPA
     public Department() {}
 
     // Constructor con parametros
-    public Department(int departmentId, String name) {
+    public Department(int departmentId, String departmentName) {
         this.departmentId = departmentId;
-        this.name = name;
+        this.departmentName = departmentName;
     }
 
     // Getters y Setters
@@ -39,11 +39,11 @@ public class Department {
         this.departmentId = departmentId;
     }
 
-    public String getName() {
-        return name;
+    public String getDepartmentName() {
+        return departmentName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
     }
 }
